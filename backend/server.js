@@ -21,8 +21,5 @@ app.use('/api/users', require('./routes/authRoutes'));
 app.use('/api/quizzes', require('./routes/quizRoutes'));
 app.use('/api/contents', require('./routes/contentRoutes'));
 
-// Define login route
-app.use('/api/auth', require('./routes/loginRoutes')); // Adjust the route path as needed
-
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
